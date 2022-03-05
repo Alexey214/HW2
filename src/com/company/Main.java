@@ -58,5 +58,51 @@ public class Main {
         System.out.println("Денис теперь получает "+DenisAf+" рублей. Годовой доход вырос на "+(DeniAfter-DenisBefore)+" рублей");
         System.out.println("Кристина теперь получает "+KrisAf+" рублей. Годовой доход вырос на "+(KrisAfter-KrisBefore)+" рублей");
 
+        //Задача №6 - проверка результата:
+        sum6();
+        //Задача №7 - проверка результата:
+        sum7();
+        //Задача №8 - проверка результата:
+        sum8();
+
     }
+
+    //Задача №6:
+    public static void sum6() {
+        int a = 12;
+        int b = 27;
+        int c = 44;
+        int d = 15;
+        int e = 9;
+        int result = a * (b + (c - d * e));
+        System.out.println("Результат вычисления будет равен: "+result);
+        result = -(a * (b + (c - d * e)));
+        System.out.println("Инвертированный результат будет равен: "+result);
+
+    }
+
+    //Задача №7:
+    public static void sum7(){
+        int a = 5;
+        int b = 7;
+        a = a+b+b;
+        b = a-b;
+        a = a-b;
+        b = b-a;
+        System.out.println("'a' стало: "+a);
+        System.out.println("'b' стало: "+b);
+    }
+
+    //Задача №8:
+    public static void sum8(){
+        int a = 245;
+        int b = (a%100-a%10)/10;
+        System.out.println("Цифра в центре числа "+a+" ровняется: "+b);
+    }
+
+
 }
+
+
+
+
